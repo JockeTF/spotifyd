@@ -710,6 +710,7 @@ pub(crate) fn get_internal_config(config: CliConfig) -> SpotifydConfig {
         device_name,
         player_config: PlayerConfig {
             bitrate,
+            gapless: true,
             normalisation: config.shared_config.volume_normalisation,
             normalisation_pregain,
         },
